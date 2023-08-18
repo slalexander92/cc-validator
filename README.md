@@ -5,6 +5,7 @@ My environment:
 - npm: 9.5.0
 
 setup:
+
 0. clone repo
 1. open each sub-folder (`/api`, `/client`) in a separate terminal tab
 2. `npm i` in each project
