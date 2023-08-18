@@ -3,7 +3,6 @@ import { creditCardService } from '../services/credit-card.service';
 
 const router = express.Router();
 
-
 router.post('/cc-validate', (req: Request, res: Response) => {
   const { body } = req;
   const { number, cvv, exp } = body;
@@ -15,15 +14,15 @@ router.post('/cc-validate', (req: Request, res: Response) => {
   if (hasEmptyValues || !isValidCard) {
     return res.send({
       status: 422,
-      data: null,
+      data: false,
       message: genericCardError,
     });
   }
 
   return res.send({
     status: 200,
-    data: 'Card is Valid',
-    message: null,
+    data: true,
+    message: 'Card is Valid',
   });
 });
 
