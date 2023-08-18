@@ -19,7 +19,7 @@ export default function CreditCardValidator({ handleRequest, message }: {handleR
   }
 
   const messageClasses = ['cc-message', (message?.type ?? '' )].join(' ');
-  const cardMessage = message && (<div className={messageClasses}>{message.text}</div>)
+  const cardMessage = message && (<div className={messageClasses}>{message.text}</div>);
 
   const rootClasses = ['cc-root', (isHardModeActive ? 'hard-mode' : '')].join(' ');
 
@@ -30,6 +30,7 @@ export default function CreditCardValidator({ handleRequest, message }: {handleR
 
         <div className="cc-input-wrapper">
           <label htmlFor="number">Card Number:</label>
+
           <input
             type="text"
             placeholder="Enter card number"
@@ -40,7 +41,8 @@ export default function CreditCardValidator({ handleRequest, message }: {handleR
         </div>
 
         <div className="cc-input-wrapper">
-          <label htmlFor="number">Expiration Date:</label>
+          <label htmlFor="exp">Expiration Date:</label>
+
           <input
             type="month"
             placeholder="MM/YY"
@@ -51,7 +53,8 @@ export default function CreditCardValidator({ handleRequest, message }: {handleR
         </div>
 
         <div className="cc-input-wrapper">
-          <label htmlFor="number">CVV:</label>
+          <label htmlFor="cvv">CVV:</label>
+
           <input
             type="text"
             placeholder="Enter CVV"
