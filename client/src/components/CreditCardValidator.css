@@ -1,0 +1,60 @@
+
+.cc-root {
+  background-color: rgb(208, 212, 217);
+  min-width: 450px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.cc-title,
+.cc-input-wrapper,
+.cc-message {
+  margin-bottom: 8px;
+}
+
+.cc-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-input-wrapper label {
+  margin-bottom: 4px;
+}
+
+.cc-root input {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 2px;
+  padding: 12px;
+}
+
+.cc-message {
+  text-align: center;
+}
+
+.cc-message.error {
+  color: red;
+}
+
+.cc-message.success {
+  color: forestgreen;
+}
+
+.hard-mode-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.cc-root.hard-mode {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
