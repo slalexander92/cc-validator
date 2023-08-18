@@ -19,7 +19,7 @@ export default function CreditCardValidator({ handleRequest, message }: {handleR
   }
 
   const messageClasses = ['cc-message', (message?.type ?? '' )].join(' ');
-  const cardMessage = message && (<div className={messageClasses}>{message.text}</div>)
+  const cardMessage = message && (<div className={messageClasses}>{message.text}</div>);
 
   const rootClasses = ['cc-root', (isHardModeActive ? 'hard-mode' : '')].join(' ');
 
