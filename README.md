@@ -1,10 +1,10 @@
 # Credit Card Validator Demo
 
-My environment:
+**My environment:**
 - Node: v18.14.2
 - npm: 9.5.0
 
-setup:
+**Setup:**
 
 0. clone repo
 1. open each sub-folder (`/api`, `/client`) in a separate terminal tab
