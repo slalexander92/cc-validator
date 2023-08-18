@@ -40,7 +40,7 @@ export default function CreditCardValidator({ handleRequest, message }: {handleR
         </div>
 
         <div className="cc-input-wrapper">
-          <label htmlFor="number">Expiration Date:</label>
+          <label htmlFor="exp">Expiration Date:</label>
           <input
             type="month"
             placeholder="MM/YY"
@@ -51,7 +51,7 @@ export default function CreditCardValidator({ handleRequest, message }: {handleR
         </div>
 
         <div className="cc-input-wrapper">
-          <label htmlFor="number">CVV:</label>
+          <label htmlFor="cvv">CVV:</label>
           <input
             type="text"
             placeholder="Enter CVV"
